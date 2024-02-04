@@ -17,3 +17,10 @@ fruits[2].style.backgroundColor = "yellow";
 for (let fruit of fruits) {
   fruit.style.fontWeight = "bold";
 }
+
+// assignment3
+const lists = document.getElementsByTagName("li");
+lists[4].style.color = "blue";
+for (let fruit of lists) {
+  fruit.style.fontStyle = "italic";
+}
