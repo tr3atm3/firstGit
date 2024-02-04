@@ -57,3 +57,21 @@ for (let fruit of EvenFruitItems) {
   fruit.style.backgroundColor = "brown";
   fruit.style.color = "white";
 }
+
+// assignment5
+const subHead = document.createElement("h3");
+const headText = document.createTextNode(
+  "Buy high quality organic fruits online"
+);
+subHead.appendChild(headText);
+const Div = document.getElementsByTagName("div");
+Div[0].appendChild(subHead);
+
+subHead.style.fontStyle = "italic";
+
+const ptag = document.createElement("p");
+const pText = document.createTextNode("Total fruits: 4");
+ptag.appendChild(pText);
+const ulTag = document.querySelector("ul");
+Div[1].insertBefore(ptag, ulTag);
+ptag.id = "fruits-total";
